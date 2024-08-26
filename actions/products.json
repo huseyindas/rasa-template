@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "title": "Tricou din bumbac organic",
+      "description": "Tricou confortabil confecționat din 100% bumbac organic. Disponibil în mai multe culori și mărimi.",
+      "price": 69.99,
+      "image": "https://example.com/images/tricou-bumbac-organic.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Blugi slim fit",
+      "description": "Blugi slim fit de înaltă calitate, perfecți pentru orice ocazie. Fabricați din denim elastic pentru confort maxim.",
+      "price": 149.99,
+      "image": "https://example.com/images/blugi-slim-fit.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Geantă de laptop",
+      "description": "Geantă elegantă și practică pentru laptop-uri de până la 15 inch. Include multiple compartimente pentru organizare ușoară.",
+      "price": 89.99,
+      "image": "https://example.com/images/geanta-laptop.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Ceas de mână clasic",
+      "description": "Ceas de mână elegant cu mecanism quartz și curea din piele autentică. Potrivit pentru ocazii formale și casual.",
+      "price": 199.99,
+      "image": "https://example.com/images/ceas-clasic.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Set de căști wireless",
+      "description": "Căști wireless cu sunet de înaltă calitate și autonomie de până la 20 de ore. Perfecte pentru muzică și apeluri în mișcare.",
+      "price": 129.99,
+      "image": "https://example.com/images/casti-wireless.jpg"
+    }
+]

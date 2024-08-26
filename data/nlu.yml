@@ -3,3 +3,19 @@ nlu:
 - intent: hello
   examples: |
     - hello
+    - hi
+    - how are you
+- intent: are_you_bot
+  examples: |
+    - are you a bot
+    - are you ai bot
+    - you are a bot?
+- intent: list_products
+  examples: |
+    - can you list products?
+    - i want to see products
+- intent: search_products
+  examples: |
+    - i want to search product
+    - product search
+    - filter products

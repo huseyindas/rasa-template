@@ -2,7 +2,26 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- are_you_bot
 - hello
+- nlu_fallback
+- list_products
+- search_products
+slots:
+  requested_slot:
+    type: any
+    influence_conversation: false
+  query:
+    type: text
+    influence_conversation: false
 responses:
+  utter_nlu_fallback:
+  - text: I didn't understand what you said. Could you please rephrase?
+  utter_bot:
+  - text: I am an artificial intelligence bot. I can list products for you. or search
+      for products.
   utter_greet:
-  - text: How can I help you?
+  - text: Welcome, how can I help you?
+actions:
+- action_list_products
+- action_search_products

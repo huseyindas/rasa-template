@@ -4,3 +4,19 @@ rules:
   steps:
   - intent: hello
   - action: utter_greet
+- rule: Bot Rule
+  steps:
+  - intent: are_you_bot
+  - action: utter_bot
+- rule: Nlu Rule
+  steps:
+  - intent: nlu_fallback
+  - action: utter_nlu_fallback
+- rule: product_list Rule
+  steps:
+  - intent: list_products
+  - action: action_list_products
+- rule: search_products Rule
+  steps:
+  - intent: search_products
+  - action: action_search_products

@@ -34,7 +34,23 @@ This repository provides a quick setup for a chatbot development environment int
 
 5. After setup:
     - Access the Rasa X interface at `http://localhost:8080`.
-    - Test the webchat widget at `http://localhost:8081/`.
+    - Test the webchat widget at `http://localhost:8081/test.html`.
+
+## Post-Setup Instructions
+
+Once the setup is complete, follow these steps:
+
+1. In the Rasa X interface, navigate to the **Training -> NLU data** section and upload the `nlu.yml` file from the `data/` directory to populate your NLU data.
+
+2. Go to the **Training -> Domain** section and upload the `domain.yml` file from the `data/` directory to set up your domain configuration.
+
+3. In the **Training -> Rules** section, upload the `rules.yml` file from the `data/` directory to define your conversation rules.
+
+4. For the **Training -> Configuration** section, open the `configuration.yml` file from the `data/` directory, copy its contents, and paste them into the configuration section in Rasa X, then save it.
+
+5. After adding or updating your data, navigate to the **Models** section and click on **Add Model** -> **Train Model** to train your model.
+
+6. Once the model is trained, you can activate it from the **Models** section.
 
 ## Usage
 

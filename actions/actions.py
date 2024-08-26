@@ -5,11 +5,9 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.events import UserUtteranceReverted
 from rasa_sdk.executor import CollectingDispatcher
 
-from .assistant import Assistant
-
-class ActionLLM(Action):
+class ActionSayHello(Action):
     def name(self) -> Text:
-        return "action_llm"
+        return "action_say_hello"
 
     async def run(
         self,
@@ -17,16 +15,4 @@ class ActionLLM(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> List[Dict[Text, Any]]:
-        try:
-            assistant = Assistant(tracker=tracker)
-
-            response = await assistant.chat(
-                message=tracker.latest_message.get("text")
-            )
-
-            dispatcher.utter_message(response)
-            return [UserUtteranceReverted()]
-        except Exception as ex:
-            logging.warn(ex)
-            dispatcher.utter_message("The chatbot is currently unable to respond. Try later.")
-            return []
+        dispatcher.utter_message("Helloi, how are you?")

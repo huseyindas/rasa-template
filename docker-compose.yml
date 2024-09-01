@@ -70,6 +70,7 @@ services:
   rasa-x:
     <<: *default-rasa-environments
     image: rasa/rasa-x:${RASA_X_VERSION}
+    restart: always
     expose:
       - "5002"
     volumes:
